@@ -23,7 +23,7 @@
 ;; get the sum of the multiples of 3 or 5
 ; nil values are removed and then a sum is applied
 (defun getsum (n)
-  (apply #'+ (remove nil (mapcar #'mult-3-or-5 (mylist n)))))
+  (apply #'+ (remove nil (mapcar #'mult-3-or-5 (mylist (- n 1))))))
     
 
 
